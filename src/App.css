@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+ .App{
+  display: flex;
+  --font-style: 'Nunito Sans', sans-serif;
+  font-size: 25px;
+  flex-direction: column;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background: #131315;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TitleSection{
+  padding-left: 10px;
+  width: 100%;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  color:#efeeee;
+  background: #242026;
+  box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+  border-radius: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection input{
+width: 250px;
+height: 40px;
+border-radius: 5px;
+border: 1px solid #8F7CEC;
+font-size: 18px;
+padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.TitleSection button{
+  width: 180px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: #CBBDDB;
+  background: #242026;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .TitleSection button:hover{
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC, 0 0 50px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
   }
-}
+
+
+  .DisplaySection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CBBDDB;
+  }
+
+
+  .PokemonCard {
+    border: 1px solid #8F7CEC;
+    border-radius: 18px;
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #8F7CEC;
+    color:#efeeee;
+    width: 250px;
+    margin: 10px;
+    box-sizing: unset;
+    display:grid;
+  }
+
+  .PokemonCard:hover{
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC;
+  }
+  
+  .SelectedPokemonCard {
+    background-color: #8F7CEC;
+    color: #F6F6F6;
+  }
+  
+  .PokemonGrid {
+    display:inline-grid;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .GoBackButton {
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #CBBDDB;
+    background: #242026;
+  }
+  .GoBackButton:hover {
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC, 0 0 50px #8F7CEC;
+  }
+
+  .PaginationButtons {
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .PaginationButtons button {
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: #CBBDDB;
+    background: #242026;
+  }
+  
+  .PaginationButtons button + button {
+    margin-left: 10px;
+  }
+  
+  .PaginationButtons button:hover {
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC, 0 0 50px #8F7CEC;
+  }
+  
+  
